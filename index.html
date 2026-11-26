@@ -33,7 +33,7 @@ button:disabled{opacity:.35;cursor:default}
 <body>
 <main>
   <h1>Special Invitation</h1>
-  <p class="sub">Honoring ceremony of Captain Saleh Al-Oraidh<br>Type the guest’s name and press “Send”</p>
+  <p class="sub">Honoring ceremony of Captain Saleh Al-araidh<br>Type the guest’s name and press “Send”</p>
 
   <div>
     <label for="nm">Guest name</label>
@@ -82,7 +82,7 @@ function build(n){
   draw(n);
   const url=cv.toDataURL('image/jpeg',0.9);
   const doc=new jspdf.jsPDF({orientation:'portrait',unit:'pt',format:[540,960],compress:true});
-  doc.setProperties({title:n,subject:'Special Invitation — Honoring ceremony of Captain Saleh Al-Oraidh'});
+  doc.setProperties({title:n,subject:'Special Invitation — Honoring ceremony of Captain Saleh Al-araidh'});
   doc.addImage(url,'JPEG',0,0,540,960,undefined,'FAST');
   // QR + «لتأكيد حضوركم» area (2160px image = 540pt, 4px per pt)
   doc.link(365,722,135,125,{url:RSVP});
